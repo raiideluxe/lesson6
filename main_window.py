@@ -2,9 +2,9 @@ import cv2
 import tkinter as tk
 import threading
 from PIL import Image, ImageTk
-import io
-import threading
-import os, sys
+# import io
+# import threading
+# import os, sys
 
 # class MainWindow:
 #     def take_photo():
@@ -68,16 +68,17 @@ def take_photo():
     label = tk.Label(photo_window, image=photo)
     label.pack()
 
-
-window = tk.Tk()
-window.geometry('1000x1000')
-button_pause = tk.Button(window, text='stop', command=pause_unpause)
-button_take_photo = tk.Button(window, text='Снимок', command=take_photo)
-button_pause.place(x=0, y=0)
-button_take_photo.place(x=0, y=20)
-video = VideoPlayer('cats_video.mp4', master=window, width=800, height=1000)
-video.place(x=50, y=0)
-
-
-window.mainloop()
+# window = tk.Tk()
+# window.geometry('1000x1000')
+# button_pause = tk.Button(window, text='stop', command=pause_unpause)
+# button_take_photo = tk.Button(window, text='Снимок', command=take_photo)
+# # button_save_photo = tk.Button(window, text='Сохранить', command=save_photo)
+# # button_save_photo.place()
+# button_pause.place(x=0, y=0)
+# button_take_photo.place(x=0, y=20)
+# video = VideoPlayer('cats_video.mp4', master=window, width=800, height=1000)
+# video.place(x=50, y=0)
+#
+#
+# window.mainloop()
 
